@@ -21,7 +21,7 @@ $(document).ready(function(){
 	$('#addEmployee').click(function(){
 		$('#employeeModal').modal('show');
 		$('#employeeForm')[0].reset();
-		$('.modal-title').html("<i class='fa fa-plus'></i> Add Employee");
+		$('.modal-title').html("<i class='fa fa-plus'></i> Insert Employee Details");
 		$('#action').val('addEmployee');
 		$('#save').val('Add');
 	});		
@@ -41,7 +41,7 @@ $(document).ready(function(){
 				$('#empSkills').val(data.skills);				
 				$('#address').val(data.address);
 				$('#designation').val(data.designation);	
-				$('.modal-title').html("<i class='fa fa-plus'></i> Edit Employee");
+				$('.modal-title').html("<i class='fa fa-plus'></i> Edit Employee Details");
 				$('#action').val('updateEmployee');
 				$('#save').val('Save');
 			}
